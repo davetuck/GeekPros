@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek Pros</title>
+    <link rel="stylesheet" href="./HomePage.css" />
+    <link rel="icon" href="./favicon.png">
+  </head>
+  <body>
+    <div class="stars"></div>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <div class="quote-button-wrapper">
+            <a class="button button__quote" href="./contact.html"
+              >Get A Quote</a
+            >
+          </div>
+        </a>
+        <div class="logo">
+          <img class="top-logo" src="./(highres)purple:green.png" alt="" />
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./services.html" class="nav-link">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    </script>
+    <div class="main">
+      <div class="section1">
+        <div class="hero2-wrapper">
+          <h1 class="section1-tag">
+            Is your phone<strong> slowing you down?</strong>
+          </h1>
+          <img class="hero2" src="./broken1(black).png" alt="" />
+        </div>
+      </div>
+      <div class="section1">
+        <div class="hero2-wrapper">
+          <img class="hero3" src="./TabletSmartHome.png" alt="" />
+          <h1 class="section1-tag">
+            Looking to set up a <strong> smart home device?</strong>
+          </h1>
+        </div>
+      </div>
+      <div class="section1">
+        <div class="hero2-wrapper">
+          <h1 class="section1-tag">
+            Have some<strong> bugs that need fixing?</strong>
+          </h1>
+          <img class="hero4" src="./BugFix.png" alt="" />
+        </div>
+      </div>
+      <div class="section2">
+        <div class="hero2-wrapper">
+          <img class="hero5" src="./repair2(purple-green-cropped).png" alt="" />
+          <div class="section2-tag-wrapper">
+            <h1 class="section2-tag">Geek Pros can <strong>help!</strong></h1>
+          </div>
+        </div>
+      </div>
+      <div class="section3-tag-wrapper">
+        <div class="section3">
+          <h1 class="section3-tag">
+            We serve <span>Lakeview</span>, <span>Lake County</span>, and the
+            surrounding area. Get a free quote today!
+          </h1>
+          <img class="tall-man" src="./tall-man.png" alt="" />
+        </div>
+        <div class="contact-button-wrapper">
+          <a href="tel:(541)363-7722" class="button button__call"
+            ><img class="call" src="./phone.png" alt=""
+          /></a>
+          <a href="sms:541)363-7722" class="button button__text"
+            ><img class="text" src="./message.png" alt=""
+          /></a>
+          <a href="mailto:geekproshelp@gmail.com" class="button button__email"
+            ><img class="email" src="./email.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <p class="footer-text">&#169; 2022 Geek Pros</p>
+      </div>
+    </div>
+  </body>
+</html>
