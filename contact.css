@@ -112,6 +112,7 @@ p {
 
 .terms {
   margin-left: 10px;
+  font-size: 20px;
 }
 
 .terms-link {
@@ -149,6 +150,15 @@ p {
   margin-top: 50px;
   box-shadow: none;
 
+}
+
+.footer-wrapper {
+  margin-top: 75px;
+}
+
+.footer-text {
+  color: lightgray;
+  text-align: center;
 }
 
 /* TABLETS AND SMALL COMPUTERS */
@@ -201,12 +211,30 @@ p {
   }
   .contact-form {
     margin-top: -75px;
+    margin-left: 20px;
   }
   .contact__name {
-    width: 350px;
+    width: 300px;
+    font-size: 20px;
+  }
+  .contact__phone {
+    font-size: 20px;
+  }
+  .contact__email {
+    font-size: 20px;
+  }
+  .drop-down {
+    font-size: 20px;
   }
   .contact__comments {
-    width: 350px;
+    width: 325px;
+    font-size: 20px;
+  }
+  .terms {
+    font-size: 16px;
+  }
+  .button__submit {
+    margin-left: -20px;
   }
   .contact__form {
     height: 10px;

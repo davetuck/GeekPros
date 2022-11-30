@@ -66,11 +66,14 @@ body {
     margin: 5px;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+.main {
+  margin: 30px 0 5px 0;
 }
 
 li {
@@ -262,7 +265,8 @@ strong {
 }
 
 .hero4 {
-  width: 50%;
+  width: 65%;
+  margin-right: 0;
 }
 
 .hero5 {
@@ -308,6 +312,12 @@ strong {
 }
 
 .section3-tag {
+  color: lightgray;
+  text-align: center;
+  font-weight: 400;
+}
+
+.section5-tag {
   color: lightgray;
   text-align: center;
   font-weight: 400;
@@ -368,7 +378,7 @@ span {
 }
 
 .footer-wrapper {
-  margin-top: 250px;
+  margin-top: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,6 +388,16 @@ span {
   font-weight: 100;
   font-size: 20px;
   color: white;
+}
+
+.bottom-paragraph-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-paragraph {
+  color: white;
+  font-size: 40px;
 }
 
 /* SMARTPHONES & TABLETS */
@@ -446,10 +466,16 @@ span {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .section1-tag {
-    margin: 0 0 0 17px;
+    margin: 0 0 0 20px;
+  }
+  .section3-tag {
+    margin-left: 40px;
+  }
+  .section5-tag {
+    color: white;
   }
   .quote-button-wrapper {
     width: 80px;
@@ -468,6 +494,9 @@ span {
   }
   .hamburger {
     margin-right: -20px;
+  }
+  .bottom-paragraph {
+    font-size: 28px;
   }
 }
 
