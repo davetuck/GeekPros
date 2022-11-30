@@ -12,11 +12,27 @@
 
 /* HEADER */
 
+.header-wrapper {
+  display: flex;
+}
+
+.fa-solid {
+  margin-top: 90px;
+  margin-left: 70px;
+  margin-right: 40px;
+  color: rgb(48, 114, 243)
+}
+
+.home-button-link {
+  height: 100%;
+}
+
 .contact-header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200px;
+  flex: 1;
 }
 
 .h1contact {
@@ -30,6 +46,10 @@
   font-size: 100px;
   margin-left: 15px;
   font-family: 'Eczar', serif;
+}
+
+.spacer-right {
+  width: 150px;
 }
 
 .contact-form {
@@ -133,13 +153,49 @@ p {
 
 /* TABLETS AND SMALL COMPUTERS */
 
+@media (max-width: 924px) {
+  .h1contact, .h1us {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 679px) {
+  .h1contact, .h1us {
+    font-size: 50px;
+  }
+  .fa-solid {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 40px;
+    color: rgb(48, 114, 243)
+  }
+}
+
+@media (max-width: 535px) {
+  .h1contact, .h1us {
+    font-size: 40px;
+  }
+  .fa-solid {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 40px;
+    color: rgb(48, 114, 243)
+  }
+}
+
 @media (max-width: 415px) {
+  .fa-solid {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 35px;
+  }
+  
   .h1contact {
-    font-size: 55px;
+    font-size: 40px;
     margin-top: -90px;
   }
   .h1us {
-    font-size: 55px;
+    font-size: 40px;
     margin-left: 10px;
     margin-top: -90px;
   }

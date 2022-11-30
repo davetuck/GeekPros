@@ -29,6 +29,21 @@
   font-family: 'Eczar', serif;
 }
 
-.smart-phone-repair, .smart-home-setup, .bug-fixing {
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.smartphone, .computer, .smart-home, .laptop-tablet, .smart-home, .bug-fixes {
   color: white;
+  margin-top: 30px;
+}
+
+.title {
+  color:rgb(52, 191, 34)
+}
+
+li {
+  list-style-type: none;
 }
