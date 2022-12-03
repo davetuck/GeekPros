@@ -62,13 +62,14 @@
 .bug-fixes {
   color: lightgray;
   margin-top: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .title {
   color: lightgray;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
+  margin-left: 75px;
 }
 
 ul {
@@ -90,6 +91,35 @@ li {
 .footer-text {
   color: lightgray;
   text-align: center;
+}
+
+.quote-button-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__quote {
+  background-color: rgb(48, 114, 243);
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 40px;
+  font-size: 30px;
+}
+
+.button__quote:hover {
+  background-color: rgb(71, 131, 251);
+}
+
+.button__quote:active {
+  background-color: rgb(52, 191, 34);
+  transition: 0ms;
+}
+
+.icon {
+  justify-content: flex-start;
 }
 
 @media (max-width: 1147px) {
@@ -124,7 +154,7 @@ li {
 
 @media (max-width: 600px) {
   .fa-solid {
-    /* margin-left: 80px; */
+    margin-left: 80px;
   }
 }
 
@@ -138,7 +168,8 @@ li {
   }
   .h1our,
   .h1services {
-    font-size: 44px;
+    font-size: 38px;
+    margin-right: 10px;
   }
   .fa-solid {
     margin-left: 20px;
@@ -157,9 +188,15 @@ li {
   .title {
     font-size: 26px;
     font-weight: 500;
+    margin-left: 38px;
   }
   li {
     list-style-type: circle;
+    font-size: 20px;
+  }
+  .button__quote {
+    padding: 20px 40px;
+    border-radius: 40px;
     font-size: 20px;
   }
 
